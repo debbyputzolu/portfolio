@@ -16,9 +16,12 @@ class Plugin {
         'init',
         [$this, 'portfolio_create_techno_custom_taxonomy']
         );
+
+
     }
 
-    public function portfolio_create_project_post_type(){
+    public function portfolio_create_project_post_type()
+    {
 
         // Method that allows us to add CPT
         $labels = [
@@ -44,7 +47,7 @@ class Plugin {
                 'custom-fields'
             ],
             'menu_position' => 5,
-            'menu_icon' => 'dashicons-code-standars'
+            'menu_icon' => 'dashicons-code-standards'
         ];
 
         register_post_type('projects', $args);
@@ -67,4 +70,6 @@ class Plugin {
 
         register_taxonomy('technos', 'projects', $args);
     }
+
+
 }
