@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4" : {
+            "Porfolio\\" : "./class",
+            "Database\\" : "./class"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor-portfolio"
+    }
+}
