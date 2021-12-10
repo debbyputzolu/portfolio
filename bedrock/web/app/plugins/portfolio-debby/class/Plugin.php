@@ -10,7 +10,12 @@ class Plugin {
        add_action(
         'init',
         [$this, 'portfolio_create_project_post_type']
-    );
+        );
+
+        add_action(
+        'init',
+        [$this, 'portfolio_create_techno_custom_taxonomy']
+        );
     }
 
     public function portfolio_create_project_post_type(){
@@ -44,5 +49,22 @@ class Plugin {
 
         register_post_type('projects', $args);
 
+    }
+
+    public function portfolio_create_techno_custom_taxonomy()
+    {
+        $labels = [
+            'name' => 'Technos',
+            'new_item_name' => 'Nom d\'une nouvelle techno',
+        ];
+
+        $args = [
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'hierarchical' => false
+        ];
+
+        register_taxonomy('technos', 'projects', $args);
     }
 }
