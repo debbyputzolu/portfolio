@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <Home/>
+    <router-view/>
 </div>
 </template>
 
 <script>
-import Home from './views/Home.vue'
 
 export default {
   name: 'App',
-  components: {
-	  Home
-  }
 }
 </script>
 
 <style lang="scss">
+#app {
+  
+  min-height: 100vh;
+}
 
-
+body{
+  margin: 0;
+}
 </style>

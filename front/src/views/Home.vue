@@ -1,5 +1,6 @@
 <template>
-    <div class="home">
+    <div class="home bg">
+     
     <div class="container">
       <header>
         <div class="photo">
@@ -36,8 +37,27 @@ export default {
 .home{
   display: flex;
   min-height: 100vh;
-  background-image: url(../assets/images/bg.png);
   
+}
+
+@keyframes defile {
+	0% { transform: translate3d(0,0,0); }
+  100%   { transform: translate3d(-2250px,0,0); }
+}
+
+.bg {
+    background-image: url(../assets/images/bg.png);
+	 //-webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //animation: 60s linear infinite defile;		
+    //transform: translate3d(0,0,0);
+    //backface-visibility: hidden;
+    //height: 100%;
+    //left: 0;
+    //opacity: 1;
+    //position: fixed;
+    top: 0;
 }
 
 .container{
