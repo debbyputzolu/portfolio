@@ -1,0 +1,95 @@
+#app {
+    min-height: 100vh;
+}
+  
+body{
+    margin: 0;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+.home{
+display: flex;
+min-height: 100vh;
+
+}
+
+.container{
+color: #ffff;
+line-height: 1.5rem;
+margin: auto;
+max-width: 800px;
+}
+
+header{
+margin-bottom: 3rem;
+}
+
+
+footer{
+margin-top: 3rem;
+text-align: center;
+color: white;
+}
+
+.photo__img{
+display: block;
+margin: auto;
+}
+
+.description{
+border-top: solid #ffff 1px;
+border-bottom: solid #ffff 1px;
+text-align: center;
+}
+
+.description__title{
+margin-top: 2.5rem;
+font-size: 26px;
+letter-spacing: 0.3rem;
+font-weight: bold;
+}
+
+.description__paragraph{
+margin-top: 1.5rem;
+font-size: 13px;
+letter-spacing: 0.2rem;
+margin-bottom: 2.5rem;
+}
+
+nav{
+    margin-top: 3rem;
+}
+  
+ul{
+    display: flex;
+    justify-content: center;
+}
+  
+li{
+    list-style: none;
+}
+  
+a{
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 1rem 1.25rem 1rem 1.45rem;
+    border: solid #ffff 1px;
+    font-size: 13px;
+    letter-spacing: 0.2rem;
+    min-width: 5rem;
+    text-align: center;
+}
+  
+a:hover{
+    background-color: #787880;
+    transition: 1s;
+}
+  
+.about__link, .work__link, .cv__link{
+    border-right: none;
+}

@@ -26,37 +26,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-nav{
-  margin-top: 3rem;
-}
 
-ul{
-  display: flex;
-  justify-content: center;
-}
-
-li{
-  list-style: none;
-}
-
-a{
-  display: block;
-  color: #ffff;
-  text-decoration: none;
-  padding: 1rem 1.25rem 1rem 1.45rem;
-  border: solid #ffff 1px;
-  font-size: 13px;
-  letter-spacing: 0.2rem;
-  min-width: 5rem;
-  text-align: center;
-}
-
-a:hover{
-  background-color: #787880;
-  transition: 1s;
-}
-
-.about__link, .work__link, .cv__link{
-  border-right: none;
-}
 </style>
